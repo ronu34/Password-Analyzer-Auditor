@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Analyzer Auditor</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>🔐 Password Analyzer Auditor</h1>
+
+  <div class="password-box">
+    <input type="password" id="password" placeholder="Enter your password..." />
+    <span class="toggle" id="togglePassword">👁</span>
+  </div>
+
+  <div class="strength-bar">
+    <div class="strength-fill" id="strengthFill"></div>
+  </div>
+
+  <div class="info" id="info"></div>
+
+  <div class="generator">
+    <button id="generateBtn">Generate Strong Password</button>
+    <button id="copyBtn">Copy Password</button>
+    <button id="clearBtn">Clear</button>
+  </div>
+
+  <div class="copy-msg" id="copyMsg"></div>
+
+  <div class="stats">
+
+    <div class="card">
+      <h2 id="length">0</h2>
+      <p>Length</p>
+    </div>
+
+    <div class="card">
+      <h2 id="entropy">0</h2>
+      <p>Entropy</p>
+    </div>
+
+    <div class="card">
+      <h2 id="score">0%</h2>
+      <p>Security Score</p>
+    </div>
+
+  </div>
+
+  <div class="tips">
+    <h2>Password Security Tips</h2>
+
+    <ul>
+      <li>Use at least 12 characters</li>
+      <li>Mix uppercase, lowercase, numbers, symbols</li>
+      <li>Avoid common words</li>
+      <li>Never reuse passwords</li>
+      <li>Use password managers</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    Advanced Password Strength Analyzer & Auditor
+  </div>
+
+</div>
+
+<script type="module" src="script.ts"></script>
+</body>
+</html>
